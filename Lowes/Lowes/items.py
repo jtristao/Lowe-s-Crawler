@@ -6,9 +6,17 @@
 import scrapy
 
 
-class LowesItem(scrapy.Item):
-    # define the fields for your item here like:
-   	url = scrapy.Field()
-   	title = scrapy.Field()
-   	price = scrapy.Field()
-   	sku = scrapy.Field()
+class RefrigeratorItem(scrapy.Item):
+	# define the fields for your item here like:
+	prod_id = scrapy.Field()
+	url = scrapy.Field()
+	description = scrapy.Field()
+	title = scrapy.Field()
+	specifications = scrapy.Field()
+	price = scrapy.Field()
+	item = scrapy.Field()
+	model = scrapy.Field()
+	sale = scrapy.Field()
+	old_value = scrapy.Field()
+
+
