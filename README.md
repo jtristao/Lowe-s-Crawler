@@ -13,18 +13,20 @@ The resulsts can be found on [refrigerators.json](refrigerators.json)
 
 ## Requirements
 	
-	* Scrapy==2.4.0
-	* scrapy-splash==0.7.2
-	* [Docker](https://docs.docker.com/get-docker/)
+Scrapy==2.4.0
+
+scrapy-splash==0.7.2
+
+[Docker](refrigerators.json)
 
 ## Usage
 
 1. Pull docker container 
-	docker pull scrapinghub/splash
+	> docker pull scrapinghub/splash
 
 2. Run docker
-	docker run -it -p 8050:8050 scrapinghub/splash --max-timeout 300
+	> docker run -it -p 8050:8050 scrapinghub/splash --max-timeout 300
 
 3. Run scrapy
-	scrapy crawl lowesProductSpider --loglevel=INFO -O output.json
+	> scrapy crawl lowesProductSpider --loglevel=INFO -O output.json
 
